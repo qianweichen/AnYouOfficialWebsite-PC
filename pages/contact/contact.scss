@@ -1,0 +1,51 @@
+.banner {
+  height: 434px;
+  background: url(../../static/image/contact-banner.png) no-repeat center top fixed;
+  .title {
+    padding-top: 195px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 6px 9px rgba(22, 22, 22, 0.6);
+  }
+  .title2 {
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 3px 6px rgba(22, 22, 22, 0.6);
+  }
+}
+.radius {
+  position: absolute;
+  top: -72px;
+  left: calc(50% - 970px);
+  width: 1920px;
+  height: 72px;
+}
+.map-group {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0;
+  height: 400px;
+  #container {
+    width: 570px;
+    height: 100%;
+  }
+  .info {
+    width: 630px;
+    height: 100%;
+    background: #f5f5f5;
+    padding: 80px 0 0 70px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    line-height: 40px;
+    span {
+      font-weight: bold;
+      &.hide {
+        visibility: hidden;
+      }
+    }
+  }
+}

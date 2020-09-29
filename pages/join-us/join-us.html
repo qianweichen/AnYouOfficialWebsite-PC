@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企业文化</title>
+  <link rel="icon" href="../../static/image/logo.ico">
+  <link rel="stylesheet" href="../../common/animate.css">
+  <link rel="stylesheet" href="../../common/jedate/skin/jedate.css">
+  <link rel="stylesheet" href="../../common/common.min.css">
+  <link rel="stylesheet" href="../../template/header/header.min.css">
+  <link rel="stylesheet" href="./join-us.min.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div>
+    <div class="banner flex-center">
+      <div>
+        <img class="title" src="../../static/image/join-title.png" alt="join-us">
+        <div class="input-group flex-between">
+          <input type="text">
+          <img src="../../static/image/search-red.png" alt="search">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <!-- 招聘岗位 -->
+      <div class="item">
+        <div class="title">
+          <div class="fs-30">招聘岗位</div>
+          <div class="fs-15">Hiring</div>
+        </div>
+        <div class="tab-group">
+          <div id="recruitment-type" class="tab1 flex">
+            <div class="active">社会招聘</div>
+            <div>校园招聘</div>
+            <div>实习生</div>
+          </div>
+          <div id="job-type" class="tab2 flex">
+            <div>业务类</div>
+            <div class="active">技术类</div>
+            <div>产品类</div>
+            <div>设计类</div>
+            <div>运营类</div>
+            <div>市场商务类</div>
+            <div>职能类</div>
+            <div>更多</div>
+          </div>
+        </div>
+        <div class="filter flex">
+          <select>
+            <option value="郑州">郑州</option>
+          </select>
+          <select>
+            <option value="全部">全部</option>
+          </select>
+          <div class="search flex">
+            <input type="text">
+            <div class="icon-group flex-center">
+              <img src="../../static/image/search2.png" alt="search">
+            </div>
+          </div>
+        </div>
+        <div id="table" class="table">
+          <div class="th">
+            <div class="td">
+              职位名称
+            </div>
+            <div class="td">
+              职位类别
+            </div>
+            <div class="td">
+              薪资范围
+            </div>
+            <div class="td">
+              工作地点
+            </div>
+            <div class="td">
+              招聘人数
+            </div>
+            <div class="td">
+              工作性质
+            </div>
+            <div class="td">
+              发布日期
+            </div>
+          </div>
+          <div id="table-tr-group"></div>
+          <!-- 分页 -->
+          <div class="page-group flex-center">
+            <div class="active">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>下一页</div>
+            <div>尾页</div>
+          </div>
+          <!-- 模板 -->
+          <script type="text/html" id="template-tr">
+            <div class="tr">
+              <div class="flex">
+                <div class="td flex-between">
+                  <div>[title]</div>
+                  <div class="arrow"></div>
+                </div>
+                <div class="td">
+                  技术类
+                </div>
+                <div class="td">
+                  面议
+                </div>
+                <div class="td">
+                  郑州
+                </div>
+                <div class="td">
+                  2
+                </div>
+                <div class="td">
+                  全职
+                </div>
+                <div class="td">
+                  [date]
+                </div>
+              </div>
+              <div class="detail">
+                <div style="display:flex;">
+                  <div class="detail-list">
+                    <div class="detail-title flex">
+                      <div class="dont"></div>
+                      <div>工作职责</div>
+                    </div>
+                    <div class="list">
+                        <div>1 、负责自如客APP通用组件的架构设计 </div>
+                        <div>2 、负责自如客APP公共UI组件的设计、编码、调试 </div>
+                        <div>3 、参与针对自如客APP的性能调优 </div>
+                        <div>4 、学习并分享新技术，帮助业务开发人员提升技术能力。</div>
+                    </div>
+                  </div>
+                  <div class="detail-list">
+                    <div class="detail-title flex">
+                      <div class="dont"></div>
+                      <div>任职要求</div>
+                    </div>
+                    <div class="list">
+                        <div>1 、负责自如客APP通用组件的架构设计 </div>
+                        <div>2 、负责自如客APP公共UI组件的设计、编码、调试 </div>
+                        <div>3 、参与针对自如客APP的性能调优 </div>
+                        <div>4 、学习并分享新技术，帮助业务开发人员提升技术能力。</div>
+                        <div>5 、学习并分享新技术，帮助业务开发人员提升技术能力。</div>
+                        <div>6 、学习并分享新技术，帮助业务开发人员提升技术能力。</div>
+                        <div>7 、学习并分享新技术，帮助业务开发人员提升技术能力。</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn flex-center">申请职位</div>
+              </div>
+            </div>
+          </script>
+        </div>
+      </div>
+      <!-- 问题解答 -->
+      <div class="item question">
+        <div class="title">
+          <div class="fs-30">问题解答</div>
+          <div class="fs-15">Problem solving</div>
+        </div>
+        <div id="question-type" class="type-list flex-between">
+          <div class="active">热门小问题</div>
+          <div>简历投递</div>
+          <div>测评</div>
+          <div>面试</div>
+          <div>offer发放</div>
+        </div>
+        <div id="question-list" class="question-list">
+          <script type="text/html" id="template-question">
+            <div class="question-item">
+              <div class="ask">
+                <span>Q:</span>
+                <span>[title]</span>
+              </div>
+              <div class="answer">
+                <span>A:</span>
+                <span>[answer]</span>
+              </div>
+            </div>
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 职位申请弹窗 -->
+  <div id="application-group" class="application-group">
+    <form id="application-form" action="">
+      <div class="application">
+        <div class="title flex-between">
+          <div>职位申请 - Android工程师</div>
+          <div id="application-close" class="close">×</div>
+        </div>
+        <div class="cont">
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>姓名</span>
+            </div>
+            <input class="right" type="text" name="name">
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>姓别</span>
+            </div>
+            <select class="right" name="sex">
+              <option value="1">男</option>
+              <option value="1">女</option>
+            </select>
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>生日</span>
+            </div>
+            <input class="right" id="date" type="text" name="birthday" />
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>毕业院校</span>
+            </div>
+            <input class="right" type="text" name="school">
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>最高学历</span>
+            </div>
+            <select class="right" name="education">
+              <option value="1">初中及以下</option>
+              <option value="2">高中</option>
+            </select>
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>前担任职务</span>
+            </div>
+            <input class="right" type="text" name="job">
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>
+                前雇主姓名
+              </span>
+            </div>
+            <input class="right" type="text" name="employer">
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>
+                手机号
+              </span>
+            </div>
+            <input class="right" type="text" name="phone">
+          </div>
+          <div class="item flex">
+            <div class="key">
+              <span class="must">*</span>
+              <span>邮箱</span>
+            </div>
+            <input class="right" type="email" name="email">
+          </div>
+          <div class="item">
+            <div class="flex">
+              <div class="key">
+                <span class="must">*</span>
+                <span>简历</span>
+              </div>
+              <div style="position: relative;">
+                <input id="application-file" class="right file" type="file" accept=".DOC,.DOCX,.PDF,.JPG,.PNG">
+                <div id="upload-btn" class="upload flex-center">点击上传</div>
+              </div>
+            </div>
+            <div class="tip">
+              支持格式：DOC、DOCX、PDF、JPG、PNG，最大支持2MB
+            </div>
+          </div>
+          <div id="application-submit" class="btn flex-center">确定</div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="footer"></div>
+  <script src="../../common/jquery-1.11.1.min.js"></script>
+  <script src="../../common/jedate/jedate.js"></script>
+  <script src="../../common/common.js"></script>
+  <script src="./join-us.js"></script>
+</body>
+
+</html>

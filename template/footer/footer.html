@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>footer</title>
+  <link rel="stylesheet" href="/common/common.min.css">
+  <link rel="stylesheet" href="/template/footer/footer.min.css">
+</head>
+
+<body>
+  <div class="footer">
+    <!-- 波浪动画 -->
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="#cecece" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#e2e2e2" />
+      </g>
+    </svg>
+    <!-- 回顶部 -->
+    <div id="go-top" class="go-top">
+      <img src="/static/image/retop.png" alt="top">
+    </div>
+    <!-- 信息 -->
+    <div class="info-group">
+      <div class="contact flex-around">
+        <div class="item">
+          <!-- <div class="title">北京总部</div> -->
+          <div class="cont">
+            <p>电话：0371-89912266</p>
+            <p>传真：0371-89913318</p>
+            <p>地址：郑州市郑东新区祥盛街8号福晟国际2号楼7层</p>
+            <p>邮箱：service@c21zhengzhou.com.cn</p>
+          </div>
+        </div>
+        <!-- <div class="item">
+          <div class="title">重庆总部</div>
+          <div class="cont">
+            <p>电话：+86-010-57766666</p>
+            <p>传真：+86-010-57766600</p>
+            <p>地址：北京市东城区东直门内北中街乙1号</p>
+            <p>邮箱：customer@hanhua.com</p>
+          </div>
+        </div> -->
+        <div class="qr-code">
+          <img src="http://www.hanhua.com/skin/default/images/hh_erm.jpg" alt="qr-code">
+          <div>扫一扫，关注渝昌</div>
+        </div>
+      </div>
+      <div class="copyright flex-center">
+        <span> Copyright © 2020 HANHUA All Right Reserved</span>
+        <span>瀚华金控股份有限公司</span>
+        <span>版权所有 技术支持</span>
+        <a href="http://www.beian.miit.gov.cn" target="_blank">渝ICP备18011299号</a>
+        <a class="flex" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50019002502068">
+          <img src="/static/image/jinghui.png" alt="jinghui">
+          <span>渝公网安备 50019002502068号</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 返回顶部按钮
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#go-top').fadeIn();
+      } else {
+        $('#go-top').fadeOut();
+      }
+    });
+    $("#go-top").click(function () {
+      $('html ,body').animate({ scrollTop: 0 }, 300);
+      return false;
+    });
+  </script>
+</body>
+
+</html>

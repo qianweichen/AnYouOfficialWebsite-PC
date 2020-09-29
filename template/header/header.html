@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+  <link rel="stylesheet" href="/common/common.min.css">
+  <link rel="stylesheet" href="/template/header/header.min.css">
+</head>
+
+<body>
+  <div id="template-header" class="header">
+    <div class="wrap flex-between">
+      <img class="logo" src="/static/image/logo.png" alt="logo">
+      <ul class="nav-group flex">
+        <li><a href="/">首页</a></li>
+        <li>
+          <a href="/pages/media-center/media-center1.html">媒体中心 </a>
+          <!-- <div class="hide">
+            <a href="/pages/media-center/media-center1.html">瀚华动态</a>
+            <a href="/pages/media-center/media-center2.html">媒体报道</a>
+            <a href="/pages/media-center/media-center3.html">视频中心</a>
+          </div> -->
+        </li>
+        <li>
+          <a href="/pages/about/company-profile/company-profile.html">关于我们</a>
+          <div class="hide">
+            <a href="/pages/about/company-profile/company-profile.html">公司简介</a>
+            <a href="/pages/about/company-culture/company-culture.html">企业文化</a>
+            <a href="/pages/about/social-responsibility/social-responsibility.html">社会责任 </a>
+            <a href="/pages/about/qualification-honor/qualification-honor.html">资质与荣誉</a>
+            <a href="/pages/about/breaking-news/breaking-news.html">公司大事记</a>
+          </div>
+        </li>
+        <li>
+          <a href="/pages/join-us/join-us.html">招贤纳士</a>
+        </li>
+        <li>
+          <a href="/pages/contact/contact.html">联系我们</a>
+        </li>
+        <li>
+          <div class="line"></div>
+        </li>
+        <li>
+          <img class="pointer" src="/static/image/search.png" alt="search">
+          <div class="seach-group flex-between">
+            <input type="text">
+            <img src="/static/image/search-dark.png" alt="search">
+          </div>
+        </li>
+        <li>
+          <div id="complex" class="pointer">繁</div>
+        </li>
+        <!-- <li>
+          <div class="pointer">EN</div>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="/common/jquery-1.11.1.min.js"></script>
+  <script src="/common/zh.js"></script>
+  <script>
+    //监听滚动
+    var previousScroll = 0;
+    $(window).scroll(function () {
+      var scrollTop = $(this).scrollTop();
+      if (scrollTop == 0) {
+        $('#template-header').addClass('bg-none');
+      } else {
+        $('#template-header').removeClass('bg-none');
+      }
+      if (scrollTop > previousScroll) {
+        $('#template-header').addClass('hide');
+      } else {
+        $('#template-header').removeClass('hide');
+      }
+      previousScroll = scrollTop;
+    });
+
+    $("#complex").click(function(){
+      if(fontLangFlag){
+        zh_tran('t');
+        $(this).text('簡');
+      }else{
+        zh_tran('s');
+        $(this).text('繁');
+      }
+      fontLangFlag = !fontLangFlag;
+    });
+  </script>
+</body>
+
+</html>

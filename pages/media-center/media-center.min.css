@@ -1,0 +1,62 @@
+.banner { height: 434px; background: url(../../static/image/media-bg.png) no-repeat center top fixed; }
+
+.banner .title { padding-top: 195px; font-size: 60px; font-weight: bold; color: #ffffff; text-shadow: 1px 6px 9px rgba(22, 22, 22, 0.6); }
+
+.banner .title2 { padding-top: 5px; font-size: 24px; font-weight: 400; color: #ffffff; text-shadow: 1px 3px 6px rgba(22, 22, 22, 0.6); }
+
+.tab-group { position: relative; padding-top: 40px; }
+
+.tab-group .item { font-size: 18px; line-height: 18px; color: #343434; padding: 8px 20px; cursor: pointer; }
+
+.tab-group .item.active { background-color: #ce3430; color: #fff; border-radius: 20px; }
+
+.tab-group .radius { position: absolute; top: -72px; left: calc(50% - 970px); width: 1920px; height: 72px; }
+
+.list { width: 1200px; margin: 0 auto; padding: 50px 0 70px 0; }
+
+.list .item { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; padding: 46px 0; border-bottom: 1px solid #eee; cursor: pointer; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+.list .item .poster { width: 320px; height: 200px; margin-right: 40px; overflow: hidden; }
+
+.list .item .poster img { width: 100%; height: 100%; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+.list .item .left { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.list .item .left .cont { width: 615px; }
+
+.list .item .left .cont .title { font-size: 22px; color: #343434; padding-top: 10px; padding-bottom: 40px; }
+
+.list .item .left .cont .text { font-size: 15px; color: #666666; line-height: 30px; }
+
+.list .item .time { padding-right: 46px; font-size: 18px; color: #666666; }
+
+.list .item:hover { background-color: #e2e2e2; }
+
+.list .item:hover .poster img { -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.page-group { padding-bottom: 60px; }
+
+.page-group div { border: 1px solid #d1d1d1; font-size: 12px; height: 34px; line-height: 34px; padding: 0 15px; cursor: pointer; margin-right: 16px; }
+
+.page-group div:last-child { margin-right: 0; }
+
+.page-group div:hover, .page-group div.active { color: #fff; border-color: #ce3430; background-color: #ce3430; }
+
+.video-list { width: 1200px; margin: 80px auto 50px; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.video-list .item { width: 380px; height: 334px; cursor: pointer; margin-right: 20px; }
+
+.video-list .item:last-child { margin-right: 0; }
+
+.video-list .item .top { position: relative; height: 240px; overflow: hidden; }
+
+.video-list .item .top .poster { width: 100%; height: 100%; display: block; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+.video-list .item .top .play { width: 93px; height: 93px; position: absolute; left: calc(50% - 35px); top: calc(50% - 35px); }
+
+.video-list .item .bottom { height: 74px; padding: 25px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f5f5f5; border-left: 4px solid #f5f5f5; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+.video-list .item:hover .poster { width: 110%; height: 110%; }
+
+.video-list .item:hover .bottom { border-color: #CD342F; }
+/*# sourceMappingURL=media-center.min.css.map */

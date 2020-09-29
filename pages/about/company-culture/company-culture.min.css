@@ -1,0 +1,30 @@
+.banner { height: 434px; background: url(../../../static/image/culture-bg.png) no-repeat center top fixed; }
+
+.banner .title { padding-top: 195px; font-size: 60px; font-weight: bold; color: #ffffff; text-shadow: 1px 6px 9px rgba(22, 22, 22, 0.6); }
+
+.banner .title2 { padding-top: 5px; font-size: 24px; font-weight: 400; color: #ffffff; text-shadow: 1px 3px 6px rgba(22, 22, 22, 0.6); }
+
+.tab-group { position: relative; padding-top: 40px; }
+
+.tab-group .item { font-size: 18px; line-height: 18px; color: #343434; padding: 8px 20px; cursor: pointer; }
+
+.tab-group .item.active { background-color: #ce3430; color: #fff; border-radius: 20px; }
+
+.tab-group .radius { position: absolute; top: -72px; left: calc(50% - 970px); width: 1920px; height: 72px; }
+
+.list { width: 1200px; margin: 98px auto; }
+
+.list .item { margin-bottom: 80px; }
+
+.list .item:last-child { margin-bottom: 0; }
+
+.list .item > img { width: 600px; height: 400px; -o-object-fit: cover; object-fit: cover; border-radius: 10px; }
+
+.list .item .info { width: 455px; color: #333; }
+
+.list .item .info .title { font-size: 36px; margin-bottom: 35px; border-bottom: 1px solid #E6E6E6; }
+
+.list .item .info .title div { display: inline-block; border-bottom: 4px solid #CD342F; padding-bottom: 26px; margin-bottom: -1px; }
+
+.list .item .info .fs-16 { line-height: 30px; }
+/*# sourceMappingURL=company-culture.min.css.map */

@@ -1,0 +1,32 @@
+.header { width: 100%; height: 75px; position: fixed; left: 0; top: 0; z-index: 2; background-color: rgba(0, 0, 0, 0.3); color: #fff; -webkit-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+.header.bg-none { background-color: rgba(0, 0, 0, 0); }
+
+.header.hide { top: -75px; }
+
+.header .wrap { height: 100%; }
+
+.header .wrap .logo { width: auto; height: 37px; }
+
+.header .wrap .nav-group { font-size: 14px; list-style: none; height: 100%; }
+
+.header .wrap .nav-group li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; padding: 0 15px; position: relative; }
+
+.header .wrap .nav-group li .line { width: 2px; height: 13px; background: #ffffff; }
+
+.header .wrap .nav-group li .hide { width: 120px; position: absolute; top: 75px; left: -17px; padding: 10px 0; background-color: rgba(0, 0, 0, 0.5); visibility: hidden; opacity: 0; -webkit-transform: translate(0, 20px); transform: translate(0, 20px); }
+
+.header .wrap .nav-group li .hide a { display: block; text-align: center; padding: 14px 20px; }
+
+.header .wrap .nav-group li .hide a:hover { background-color: rgba(221, 221, 221, 0.3); }
+
+.header .wrap .nav-group li:hover .hide, .header .wrap .nav-group li:hover .seach-group { visibility: initial; opacity: 1; -webkit-transform: translate(0, 0); transform: translate(0, 0); -webkit-transition: all ease 0.3s; transition: all ease 0.3s; }
+
+.header .wrap .nav-group li a { color: #fff; text-shadow: #000 0.1em 0.1em 0.2em; }
+
+.header .wrap .nav-group li .seach-group { height: 30px; position: absolute; top: 75px; left: -80px; background-color: #fcfcfc; padding: 0 4px 0 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #fcfcfc; opacity: 0; visibility: hidden; }
+
+.header .wrap .nav-group li .seach-group input { border: none; outline: none; background-color: #fcfcfc; height: 100%; }
+
+.header .wrap .nav-group li .seach-group img { width: 25px; height: auto; }
+/*# sourceMappingURL=header.min.css.map */

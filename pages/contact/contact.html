@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../static/image/logo.ico">
+  <title>媒体中心</title>
+  <link rel="stylesheet" href="../../common/animate.css">
+  <link rel="stylesheet" href="../../common/common.min.css">
+  <link rel="stylesheet" href="../../template/header/header.min.css">
+  <link rel="stylesheet" href="./contact.min.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div>
+    <div class="banner">
+      <div class="wrap">
+        <div class="title">联系我们</div>
+        <div class="title2">Contact us</div>
+      </div>
+    </div>
+    <div style="position: relative;">
+      <img class="radius" src="../../../static/image/radius.png" alt="radius">
+      <div class="map-group flex-center">
+        <div id="container"></div>
+        <div class="info">
+          <p><span>电话：</span>0371-89912266</p>
+          <p><span>传真：</span>0371-89913318</p>
+          <p><span>地址：</span>郑州市郑东新区祥盛街8号福晟国际2号楼7层</p>
+          <p><span>邮箱：</span>service@c21zhengzhou.com.cn</p>
+          <p><span>客服时间：</span> 周一至周五 08:30-18:30
+          <p>
+            <span class="hide">客服时间：</span>
+            周六至周日 10:00-17:00</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script src="../../common/jquery-1.11.1.min.js"></script>
+  <script src="https://webapi.amap.com/maps?v=1.4.15&key=d082fef41633de5bd6594f8e97027e8f"></script>
+  <script>
+    // 载入头部尾部
+    $('#header').load('/template/header/header.html');
+    $('#footer').load('/template/footer/footer.html');
+
+    var map = new AMap.Map('container', {
+      zoom: 14,  //设置地图显示的缩放级别
+      center: [113.756395, 34.767906],//设置地图中心点坐标
+    });
+    // 构造点标记
+    var marker = new AMap.Marker({
+      icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+      position: [113.756395, 34.767906]
+    });
+    map.add(marker);
+  </script>
+</body>
+
+</html>

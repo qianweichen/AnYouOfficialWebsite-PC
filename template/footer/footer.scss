@@ -1,0 +1,112 @@
+.footer {
+  .waves {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+    .parallax > use {
+      animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+      &:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+      }
+      &:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+      }
+      &:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+      }
+      &:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+      }
+    }
+    @keyframes move-forever {
+      0% {
+        transform: translate3d(-90px, 0, 0);
+      }
+      100% {
+        transform: translate3d(85px, 0, 0);
+      }
+    }
+    /*Shrinking for mobile*/
+    @media (max-width: 768px) {
+      .waves {
+        height: 40px;
+        min-height: 40px;
+      }
+    }
+  }
+  .go-top {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    right: 70px;
+    bottom: 60px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff0502, #fe5e0f);
+    cursor: pointer;
+    img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: calc(50% - 15px);
+      top: calc(50% - 15px);
+    }
+    &:hover {
+      background: #bf2e2e;
+    }
+  }
+  .info-group {
+    background-color: #f4f4f4;
+    padding: 50px 0 80px 0;
+    .contact {
+      width: 1200px;
+      margin: 0 auto;
+      .item {
+        width: 425px;
+        height: 230px;
+        padding: 30px 50px;
+        box-sizing: border-box;
+        transition: all ease 0.5s;
+        .title {
+          padding-bottom: 30px;
+          color: #333;
+          font-size: 18px;
+          font-weight: bold;
+          transition: all ease 0.5s;
+        }
+        .cont {
+          color: #666666;
+          font-size: 14px;
+          line-height: 30px;
+        }
+        &:hover {
+          box-shadow: -6px -6px 20px #e4e4e4, 6px 6px 20px #e4e4e4;
+          .title {
+            color: #e13d40;
+          }
+        }
+      }
+      .qr-code {
+        color: #666666;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    .copyright {
+      margin-top: 45px;
+      color: #808080;
+      font-size: 13px;
+      >span,a{
+        margin: 0 4px;
+      }
+    }
+  }
+}

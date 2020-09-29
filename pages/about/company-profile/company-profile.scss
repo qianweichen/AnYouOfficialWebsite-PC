@@ -1,0 +1,141 @@
+.banner {
+  height: 434px;
+  background: url(../../../static/image/profile-bg.png) no-repeat center top fixed;
+  .title {
+    padding-top: 195px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 6px 9px rgba(22, 22, 22, 0.6);
+  }
+  .title2 {
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 3px 6px rgba(22, 22, 22, 0.6);
+  }
+}
+.tab-group {
+  position: relative;
+  padding-top: 40px;
+  .item {
+    font-size: 18px;
+    line-height: 18px;
+    color: #343434;
+    padding: 8px 20px;
+    cursor: pointer;
+    &.active {
+      background-color: #ce3430;
+      color: #fff;
+      border-radius: 20px;
+    }
+  }
+  .radius {
+    position: absolute;
+    top: -72px;
+    left: calc(50% - 970px);
+    width: 1920px;
+    height: 72px;
+  }
+}
+.about {
+  position: relative;
+  text-align: center;
+  padding: 80px 0 100px;
+  width: 1072px;
+  margin: 0 auto;
+  .title {
+    .fs-15 {
+      color: #343434;
+    }
+    .fs-30 {
+      color: #292929;
+      letter-spacing: 5px;
+      font-weight: bold;
+    }
+  }
+  .text {
+    text-align: left;
+    color: #666;
+    line-height: 200%;
+    text-indent: 2em;
+  }
+  .data-group {
+    width: 930px;
+    margin: 60px auto;
+    .item {
+      color: #e63c2f;
+    }
+  }
+  .about-more {
+    font-size: 15px;
+    width: 120px;
+    height: 42px;
+    border-radius: 4px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #e13d40;
+    color: #e13d40;
+    transition: all ease 0.3s;
+    &:hover {
+      background-color: #e13d40;
+      color: #fff;
+    }
+  }
+  .radius {
+    position: absolute;
+    bottom: -72px;
+    left: calc(50% - 970px);
+    width: 1920px;
+    height: 72px;
+  }
+}
+.hope {
+  height: 635px;
+  background: url(../../../static/image/profile-bg2.png) no-repeat center fixed;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 130px;
+  > div {
+    width: 895px;
+    .fs-16 {
+      padding: 65px 0;
+    }
+    img {
+      width: 52px;
+      height: 52px;
+      cursor: pointer;
+      transition: all ease 1s;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+.videos {
+  display: none;
+  border: 1px solid #080808;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  #video {
+    width: 640px;
+    height: 360px;
+    position: absolute;
+    left: calc(50% - 320px);
+    top: calc(50% - 180px);
+  }
+  #vclose {
+    position: absolute;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    bottom: 100px;
+    left: calc(50% - 35px);
+  }
+}

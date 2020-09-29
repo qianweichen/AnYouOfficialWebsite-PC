@@ -1,0 +1,146 @@
+.banner {
+  height: 434px;
+  background: url(../../../static/image/news-banner.png) no-repeat center top fixed;
+  .title {
+    padding-top: 195px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 6px 9px rgba(22, 22, 22, 0.6);
+  }
+  .title2 {
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 3px 6px rgba(22, 22, 22, 0.6);
+  }
+}
+.tab-group {
+  position: relative;
+  padding-top: 40px;
+  .item {
+    font-size: 18px;
+    line-height: 18px;
+    color: #343434;
+    padding: 8px 20px;
+    cursor: pointer;
+    &.active {
+      background-color: #ce3430;
+      color: #fff;
+      border-radius: 20px;
+    }
+  }
+  .radius {
+    position: absolute;
+    top: -72px;
+    left: calc(50% - 970px);
+    width: 1920px;
+    height: 72px;
+  }
+}
+.about {
+  position: relative;
+  text-align: center;
+  padding: 80px 0 100px;
+  width: 1072px;
+  margin: 0 auto;
+  .title {
+    .fs-15 {
+      color: #343434;
+    }
+    .fs-30 {
+      color: #292929;
+      letter-spacing: 5px;
+      font-weight: bold;
+    }
+  }
+  .time-line {
+    position: relative;
+    margin: 60px auto 0;
+    width: 927px;
+    align-items: flex-start;
+    .year {
+      width: 97px;
+      height: 97px;
+      font-size: 16px;
+      color: #fff;
+      background: url(../../../static/image/news-year.png) #fff;
+      position: absolute;
+      left: calc(50% - 48.5px);
+      &.year1 {
+        top: 0;
+      }
+      &.year2 {
+        bottom: 0;
+      }
+    }
+    .line {
+      width: 0;
+      height: 100%;
+      border-right: 1px dashed #aeaeae;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: -1;
+    }
+    .right {
+      padding: 97px 0;
+      .item {
+        margin-top: 90px;
+        text-align: left;
+        font-size: 16px;
+        .img {
+          width: 386px;
+          height: 258px;
+          border-radius: 6px;
+          margin-top: 24px;
+        }
+        .title {
+          margin-left: -84px;
+          .text{
+            width: 380px;
+          }
+          .date {
+            color: #ce2828;
+            padding-bottom: 10px;
+          }
+          > div {
+            padding-left: 25px;
+          }
+        }
+      }
+    }
+    .left {
+      padding: 230px 0 97px;
+      .item {
+        margin-top: 90px;
+        text-align: right;
+        font-size: 16px;
+        .img {
+          width: 386px;
+          height: 258px;
+          border-radius: 6px;
+          margin-top: 24px;
+        }
+        .title {
+          margin-right: -84px;
+          justify-content: flex-end;
+          .text{
+            width: 380px;
+          }
+          .line-red {
+            transform: rotate(180deg);
+          }
+          .date {
+            color: #ce2828;
+            padding-bottom: 10px;
+          }
+          > div {
+            padding-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
